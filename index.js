@@ -3,13 +3,33 @@ const toolbox = {
     "contents": [
       {
         "kind": "block",
-        "type": "events_when_script_ran",
+        "type": "controls_if"
       },
       {
         "kind": "block",
-        "type": "window_alert",
+        "type": "controls_repeat_ext"
       },
-    ],
+      {
+        "kind": "block",
+        "type": "logic_compare"
+      },
+      {
+        "kind": "block",
+        "type": "math_number"
+      },
+      {
+        "kind": "block",
+        "type": "math_arithmetic"
+      },
+      {
+        "kind": "block",
+        "type": "text"
+      },
+      {
+        "kind": "block",
+        "type": "text_print"
+      },
+    ]
 }
 
 const workspace = Blockly.inject('blocklyDiv', {toolbox: toolbox});
